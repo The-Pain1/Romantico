@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responde</title>
+
+    <style>
+        body{
+            text-align: center;
+            padding: 200px;
+            font-size: large;
+            background-color: rgb(146, 16, 16);
+        }
+        div{
+            display: inline;
+        }
+        button{
+            height: 50px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1> Cuzinho Hj?</h1>
+    <div>
+        <button><a href="https://www.youtube.com/watch?v=izGwDsrQ1eQ">Sim</a></button>
+        <button id="btn" onclick="desvia(this)" onmouseover="desvia(this)">Não</button>
+    </div>
+
+    <script>
+        function desvia(t){
+            var btn = t;
+            btn.style.position = 'absolute';
+            btn.style.botton = aleatorio(10,90);
+            btn.style.left = aleatorio(10,90);
+        }
+        function aleatorio(min,max){
+            return(Math.random() * (max - min) + min ) + "%";
+        }
+    </script>
+</body>
+</html>
